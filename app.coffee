@@ -20,5 +20,7 @@ app.configure "development", ->
   app.use express.errorHandler()
 
 app.get "/hook", hook.index
+app.post "/hook", hook.index
+
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")

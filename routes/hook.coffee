@@ -7,5 +7,5 @@ exports.index = (request, response) ->
   response.writeHead 200,
     "Content-Type": "text/plain"
   
-  response.write 'http://google.com/'
+  response.write 'http://www.google.com'
   response.end()
